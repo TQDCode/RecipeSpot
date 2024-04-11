@@ -85,6 +85,14 @@ main#recipeList section.recipe-cards {
   flex-direction: column;
   gap: 32px;
 }
+main#recipeList section.recipe-cards .no-recipes {
+  background-color: rgb(227, 38, 76);
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 12px 14px;
+  border-radius: 8px;
+}
 main#recipeList section.recipe-cards .recipe-card {
   display: flex;
   gap: 32px;
@@ -173,6 +181,9 @@ main#recipe section.individual-recipe .recipe-info ul li, main#recipe section.in
     font-size: 1.7rem;
   }
   main#home div input {
+    font-size: 1.1rem;
+  }
+  main#recipeList section.recipe-cards .no-recipes {
     font-size: 1.1rem;
   }
   main#recipeList section.recipe-cards .recipe-card {

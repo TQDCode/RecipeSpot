@@ -23,6 +23,7 @@ function searchRecipes(search) {
   }).then(data => {
     // Storing the fetched data in session storage.
     sessionStorage.setItem("recipeResults", JSON.stringify(data));
+    sessionStorage.setItem("query", search);
 
     // Redirecting to the recipe list page.
     window.location.href = "recipeList.html";

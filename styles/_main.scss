@@ -55,6 +55,17 @@ main#recipeList {
     flex-direction: column;
     gap: 32px;
 
+    .no-recipes {
+      background-color: $red;
+      color: white;
+
+      font-size: $p-fs-large;
+      font-weight: bold;
+
+      padding: 12px 14px;
+      border-radius: 8px;
+    }
+
     .recipe-card {
       display: flex;
       gap: 32px;
@@ -184,6 +195,10 @@ main#recipe {
 
   main#recipeList {
     section.recipe-cards {
+      .no-recipes {
+        font-size: $p-fs-small;
+      }
+
       .recipe-card {
         gap: 12px;
         flex-direction: column;

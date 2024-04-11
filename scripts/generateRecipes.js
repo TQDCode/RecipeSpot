@@ -1,5 +1,5 @@
 console.log("Testing...")
-
+const recipeCardsDiv = document.querySelector(".recipe-cards");
 const recipeData = sessionStorage.getItem("recipeResults");
 
 // Checking whether stored data exists.
@@ -7,12 +7,20 @@ if (recipeData) {
   // Parsing the JSON data.
   const data = JSON.parse(recipeData);
 
-  console.log(data);
-  console.log(data.meals);
-  console.log(data.meals[0]);
+  // Clearing the current recipes cards.
+  recipeCardsDiv.innerHTML = "";
 
-  data.meals.forEach(createRecipeCard);
+  if (data.meals && data.meals.length > 0) {
+    console.log(data);
+    data.meals.forEach(createRecipeCard);
+  } 
+  else {
+    const message = document.createElement("p");
+    message.classList.add("no-recipes");
+    message.innerHTML = `There are currently no '${sessionStorage.getItem("query")}' recipes.`;
 
+    recipeCardsDiv.appendChild(message);
+  }
 } else {
   console.error("No data found in session storage.");
   window.location.href = "index.html";
@@ -21,8 +29,6 @@ if (recipeData) {
 
 
 function createRecipeCard(value, index, array) {
-  const recipeCardsDiv = document.querySelector(".recipe-cards");
-
   // Creating the recipe card div.
   const recipeCardDiv = document.createElement("div");
   recipeCardDiv.classList.add("recipe-card");
