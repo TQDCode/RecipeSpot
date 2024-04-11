@@ -57,6 +57,11 @@ main#recipe {
     border-radius: 8px;
 
     font-weight: 500;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $black-hover;
+    }
   }
 
   section.individual-recipe {
@@ -79,6 +84,30 @@ main#recipe {
         .recipe-title {
           font-size: $heading-fs-large;
           font-weight: bold;
+        }
+
+        .recipe-category {
+          font-size: $p-fs-large;
+
+          span {
+            font-weight: bold;
+          }
+        }
+
+        button {
+          background-color: $orange;
+          color: $white;
+          font-weight: 600;
+          font-size: $p-fs-large;
+
+          border: none;
+          padding: 8px 16px;
+          border-radius: 8px;
+
+          &:hover {
+            cursor: pointer;
+            background-color: $orange-hover;
+          }
         }
       }
     }

@@ -74,6 +74,10 @@ main#recipe .back-btn {
   border-radius: 8px;
   font-weight: 500;
 }
+main#recipe .back-btn:hover {
+  cursor: pointer;
+  background-color: #000000;
+}
 main#recipe section.individual-recipe {
   background-color: #FFE9D5;
   border-radius: 8px;
@@ -90,6 +94,25 @@ main#recipe section.individual-recipe .recipe-heading {
 main#recipe section.individual-recipe .recipe-heading .recipe-labels .recipe-title {
   font-size: 2rem;
   font-weight: bold;
+}
+main#recipe section.individual-recipe .recipe-heading .recipe-labels .recipe-category {
+  font-size: 1.3rem;
+}
+main#recipe section.individual-recipe .recipe-heading .recipe-labels .recipe-category span {
+  font-weight: bold;
+}
+main#recipe section.individual-recipe .recipe-heading .recipe-labels button {
+  background-color: #FF9244;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 1.3rem;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+main#recipe section.individual-recipe .recipe-heading .recipe-labels button:hover {
+  cursor: pointer;
+  background-color: #F7791F;
 }
 
 @media only screen and (max-width: 480px) {
