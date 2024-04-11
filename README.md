@@ -10,6 +10,13 @@ Below is the UI/UX design created using Figma.
 **Phone**<br>
 ![Home - Phone](https://github.com/TQDCode/RecipeSpot/assets/89931577/edbe88b7-c1fc-43c7-89e2-769a821faef0)
 
+## The RecipeList Page
+**Desktop**<br>
+![RecipeList - Desktop](https://github.com/TQDCode/RecipeSpot/assets/89931577/eb9fb8c2-6482-4f79-b5f6-e837c0c9ac27)
+
+**Phone**<br>
+![RecipeList - Phone](https://github.com/TQDCode/RecipeSpot/assets/89931577/8d376062-4363-4308-a218-420ec2b92863)
+
 ## The Recipe Page
 **Desktop**<br>
 ![Recipe - Desktop](https://github.com/TQDCode/RecipeSpot/assets/89931577/4afde1ff-9bb1-4dfd-81ce-86d293e41353)
