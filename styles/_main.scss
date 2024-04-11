@@ -47,23 +47,24 @@ main#home {
   }
 }
 
-main#recipe {
-  .back-btn {
-    background-color: $black;
-    color: $white;
+main#recipeList {
+  section.recipe-cards {
+    .recipe-card {
+      display: flex;
+    }
 
-    padding: 8px 16px;
-    border: none;
-    border-radius: 8px;
-
-    font-weight: 500;
-
-    &:hover {
-      cursor: pointer;
-      background-color: $black-hover;
+    .recipe-img {
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 8px;
+        object-fit: cover;
+      }
     }
   }
+}
 
+main#recipe {
   section.individual-recipe {
     background-color: #FFE9D5;
     border-radius: 8px;

@@ -17,6 +17,19 @@ body {
   margin: 0 32px;
 }
 
+.back-btn {
+  background-color: #333333;
+  color: #FFFFFF;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+}
+.back-btn:hover {
+  cursor: pointer;
+  background-color: #000000;
+}
+
 @media only screen and (min-width: 720px) {
   .container {
     margin: 0 120px;
@@ -66,18 +79,17 @@ main#home div input {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.0705882353);
 }
 
-main#recipe .back-btn {
-  background-color: #333333;
-  color: #FFFFFF;
-  padding: 8px 16px;
-  border: none;
+main#recipeList section.recipe-cards .recipe-card {
+  display: flex;
+}
+main#recipeList section.recipe-cards .recipe-img img {
+  width: 150px;
+  height: 150px;
   border-radius: 8px;
-  font-weight: 500;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-main#recipe .back-btn:hover {
-  cursor: pointer;
-  background-color: #000000;
-}
+
 main#recipe section.individual-recipe {
   background-color: #FFE9D5;
   border-radius: 8px;
