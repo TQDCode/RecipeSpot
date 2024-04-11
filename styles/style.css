@@ -79,8 +79,31 @@ main#home div input {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.0705882353);
 }
 
+main#recipeList section.recipe-cards {
+  margin: 24px 0;
+}
 main#recipeList section.recipe-cards .recipe-card {
   display: flex;
+  gap: 32px;
+  padding: 12px 24px;
+  background-color: #FFFFFF;
+  border: solid 1px rgba(51, 51, 51, 0.1921568627);
+  box-shadow: 4px 4px 4px rgba(51, 51, 51, 0.062745098);
+  border-radius: 8px;
+}
+main#recipeList section.recipe-cards .recipe-card .recipe-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+main#recipeList section.recipe-cards .recipe-card .recipe-category {
+  font-size: 1.3rem;
+}
+main#recipeList section.recipe-cards .recipe-card .recipe-category span {
+  font-weight: bold;
+}
+main#recipeList section.recipe-cards .recipe-card:hover {
+  cursor: pointer;
+  box-shadow: 4px 4px 4px rgba(51, 51, 51, 0.1921568627);
 }
 main#recipeList section.recipe-cards .recipe-img img {
   width: 150px;
@@ -147,6 +170,18 @@ main#recipe section.individual-recipe .recipe-info ul li, main#recipe section.in
     font-size: 1.7rem;
   }
   main#home div input {
+    font-size: 1.1rem;
+  }
+  main#recipeList section.recipe-cards .recipe-card {
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  main#recipeList section.recipe-cards .recipe-card .recipe-title {
+    font-size: 1.7rem;
+  }
+  main#recipeList section.recipe-cards .recipe-card .recipe-category {
     font-size: 1.1rem;
   }
 }

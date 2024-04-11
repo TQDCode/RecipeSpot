@@ -49,8 +49,35 @@ main#home {
 
 main#recipeList {
   section.recipe-cards {
+    margin: 24px 0;
+
     .recipe-card {
       display: flex;
+      gap: 32px;
+      padding: 12px 24px;
+
+      background-color: $white;
+      border: solid 1px #33333331;
+      box-shadow: 4px 4px 4px #33333310;
+      border-radius: 8px;
+
+      .recipe-title {
+        font-size: $heading-fs-large;
+        font-weight: bold;
+      }
+
+      .recipe-category {
+        font-size: $p-fs-large;
+
+        span {
+          font-weight: bold;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        box-shadow: 4px 4px 4px #33333331;
+      }
     }
 
     .recipe-img {
@@ -147,6 +174,25 @@ main#recipe {
 
       input {
         font-size: $p-fs-small;
+      }
+    }
+  }
+
+  main#recipeList {
+    section.recipe-cards {
+      .recipe-card {
+        gap: 12px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .recipe-title {
+          font-size: $heading-fs-small;
+        }
+
+        .recipe-category {
+          font-size: $p-fs-small;
+        }
       }
     }
   }
