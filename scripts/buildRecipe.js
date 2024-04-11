@@ -54,6 +54,10 @@ function generateList(list, isIngredients=true) {
 
     method.forEach(value => {
       if (value.length > 0) {
+        // Checking whether the string includes things like STEP # etc
+        // if it does it will be removed.
+        value = value.replace(/STEP [\d]{1,2}/g, "");
+
         items.push(`${value}.`)
       }
     });
