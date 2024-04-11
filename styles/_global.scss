@@ -1,0 +1,23 @@
+* {
+  font-family: $font-main;
+}
+
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 32px;
+}
+
+@media only screen and (min-width: 720px) {
+  .container {
+    margin: 0 120px;
+  }
+}
