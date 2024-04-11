@@ -137,6 +137,13 @@ main#recipe section.individual-recipe .recipe-heading {
   display: flex;
   gap: 32px;
 }
+main#recipe section.individual-recipe .recipe-heading .recipe-img img {
+  width: 270px;
+  height: 270px;
+  border-radius: 8px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 main#recipe section.individual-recipe .recipe-heading .recipe-labels .recipe-title {
   font-size: 2rem;
   font-weight: bold;

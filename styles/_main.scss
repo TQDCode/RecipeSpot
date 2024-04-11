@@ -123,6 +123,15 @@ main#recipe {
       display: flex;
       gap: 32px;
 
+      .recipe-img {
+        img {
+          width: 270px;
+          height: 270px;
+          border-radius: 8px;
+          object-fit: cover;
+        }
+      }
+
       .recipe-labels {
         .recipe-title {
           font-size: $heading-fs-large;
