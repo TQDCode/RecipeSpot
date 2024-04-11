@@ -7,8 +7,6 @@ function handleEnterKeyPress(event) {
   if (event.key === "Enter") {
     console.log("Enter key clicked.");
   }
-
-  searchRecipes(searchBar.value);
 }
 
 function searchRecipes(search) {
@@ -25,6 +23,15 @@ function searchRecipes(search) {
     return response.json();
   }).then(data => {
     console.log(data);
+    console.log(data.meals);
+    console.log(data.meals[0]);
+
+    // Storing the fetched data in session storage.
+    sessionStorage.setItem("recipeResults", JSON.stringify(data));
+
+    // Redirecting to the recipe list page.
+    window.location.href = "recipeList.html";
+
   }).catch(error => {
     // Handling any errors that occurred during the fetch.
     console.error("A problem occurred during the fetch operation:", error);
@@ -40,4 +47,6 @@ searchBar.addEventListener("change", () => {
   document.addEventListener("keypress", handleEnterKeyPress);
 
   console.log("Search bar value changed.");
+
+  searchRecipes(searchBar.value);
 });
