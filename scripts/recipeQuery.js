@@ -1,5 +1,4 @@
 const searchBar = document.querySelector("#searchbar");
-console.log(searchBar);
 
 // Functions that handles the 'Enter' key press.
 function handleEnterKeyPress(event) {
@@ -22,10 +21,6 @@ function searchRecipes(search) {
     // Parsing the JSON response.
     return response.json();
   }).then(data => {
-    console.log(data);
-    console.log(data.meals);
-    console.log(data.meals[0]);
-
     // Storing the fetched data in session storage.
     sessionStorage.setItem("recipeResults", JSON.stringify(data));
 
