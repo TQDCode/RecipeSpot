@@ -1,5 +1,6 @@
 # RecipeSpot
 RecipeSpot is a recipe finder website.
+Demo the website [here](https://tqdcode.github.io/RecipeSpot/).
 
 Below is the UI/UX design created using Figma.
 
