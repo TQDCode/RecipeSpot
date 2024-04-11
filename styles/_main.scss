@@ -111,6 +111,26 @@ main#recipe {
         }
       }
     }
+
+    .recipe-info {
+      p.recipe-header {
+        font-weight: bold;
+      }
+
+      p {
+        font-size: $p-fs-large;
+      }
+
+      div {
+        margin-bottom: 48px;
+      }
+
+      ul, ol {
+        li {
+          margin: 18px 0;
+        }
+      }
+    }
   }
 }
 
