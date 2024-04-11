@@ -4,8 +4,29 @@
   font-family: "Raleway", sans-serif;
 }
 
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+.container {
+  margin: 0 32px;
+}
 
 
 header > img {
   width: 300px;
+}
+
+main#home {
+  p {
+    font-size: 2rem;
+  }
+}
+
+
+@media only screen and (min-width: 720px) {
+  .container {
+    margin: 0 120px;
+  }
 }
