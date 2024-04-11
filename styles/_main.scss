@@ -49,7 +49,11 @@ main#home {
 
 main#recipeList {
   section.recipe-cards {
-    margin: 24px 0;
+    margin: 24px 0 36px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 
     .recipe-card {
       display: flex;

@@ -80,7 +80,10 @@ main#home div input {
 }
 
 main#recipeList section.recipe-cards {
-  margin: 24px 0;
+  margin: 24px 0 36px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 main#recipeList section.recipe-cards .recipe-card {
   display: flex;
