@@ -10,8 +10,9 @@ if (recipeData) {
   // Clearing the current recipes cards.
   recipeCardsDiv.innerHTML = "";
 
+  // Checking whether the meals property exists and whether it's null.
   if (data.meals && data.meals.length > 0) {
-    console.log(data);
+    // console.log(data);
     data.meals.forEach(createRecipeCard);
   } 
   else {
@@ -64,6 +65,20 @@ function createRecipeCard(value, index, array) {
 
   recipeCardDiv.appendChild(labelsDiv);
 
+  // Adding an event listener to the newly created recipe card
+  recipeCardDiv.addEventListener("click", function() {
+    goToRecipe(value, index, array);
+  });
+
   recipeCardsDiv.appendChild(recipeCardDiv)
 }
 
+function recipeEventListener(value, index, array) {
+  value.addEventListener("click", goToRecipe(value, index, array));
+}
+
+function goToRecipe(event, value, index, array) {
+  console.log(event);
+  console.log(value);
+  console.log(index);
+}
