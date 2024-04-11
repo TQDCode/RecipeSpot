@@ -5,38 +5,58 @@ header {
   height: 72px;
 
   img {
-    width: 300px;
-    padding-top: 24px;
+    width: 200px;
+    padding: 24px 0;
   }
 }
 
 main#home {
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-
   height: calc(100vh - 72px);
   background-image: url("../images/bg.png");
   background-size: cover;
 
-  p {
-    background-color: #0000003c;
-    color: #FFFFFF;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30vh;
 
-    width: fit-content;
-    padding: 8px 16px;
-    border-radius: 8px;
+    p {
+      background-color: #0000003c;
+      color: #FFFFFF;
 
-    font-weight: 800;
-    font-size: 2rem;
+      width: fit-content;
+      padding: 8px 16px;
+      border-radius: 8px;
+
+      font-weight: 800;
+      font-size: 2rem;
+    }
+
+    input {
+      font-size: 1.3rem;
+      width: 80vw;
+      padding: 12px 16px;
+      border-radius: 8px;
+      border: none;
+      box-shadow: 4px 4px 4px #00000012;
+    }
   }
+}
 
-  input {
-    font-size: 1.3rem;
-    width: 80vw;
-    padding: 12px 16px;
-    border-radius: 8px;
-    border: none;
-    box-shadow: 4px 4px 4px #00000012;
+
+@media only screen and (max-width: 480px) {
+  main#home {
+    div {
+      padding-top: 20vh;
+
+      p {
+        font-size: 1.7rem;
+      }
+
+      input {
+        font-size: 1.1rem;
+      }
+    }
   }
 }
