@@ -3,6 +3,14 @@
 $font-main: "Raleway", sans-serif;
 $black: #333333;
 $white: #FFFFFF;
+
+// For large devices.
 $margin-large: 120px;
+$heading-fs-large: 2rem;
+$p-fs-large: 1.3rem;
+
+// For small devices.
 $margin-medium: 60px;
 $margin-small: 32px;
+$heading-fs-small: 1.7rem;
+$p-fs-small: 1.1rem;

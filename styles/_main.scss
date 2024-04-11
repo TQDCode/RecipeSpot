@@ -33,11 +33,11 @@ main#home {
       border-radius: 8px;
 
       font-weight: 800;
-      font-size: 2rem;
+      font-size: $heading-fs-large;
     }
 
     input {
-      font-size: 1.3rem;
+      font-size: $p-fs-large;
       width: 80vw;
       padding: 12px 16px;
       border-radius: 8px;
@@ -70,6 +70,18 @@ main#recipe {
     padding: 24px;
 
     box-sizing: border-box;
+
+    .recipe-heading {
+      display: flex;
+      gap: 32px;
+
+      .recipe-labels {
+        .recipe-title {
+          font-size: $heading-fs-large;
+          font-weight: bold;
+        }
+      }
+    }
   }
 }
 
@@ -80,11 +92,11 @@ main#recipe {
       padding-top: 20vh;
 
       p {
-        font-size: 1.7rem;
+        font-size: $heading-fs-small;
       }
 
       input {
-        font-size: 1.1rem;
+        font-size: $p-fs-small;
       }
     }
   }
