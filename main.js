@@ -7,12 +7,28 @@ function handleEnterKeyPress(event) {
   if (event.key === "Enter") {
     console.log("Enter key clicked.");
   }
+
+  searchRecipes(searchBar.value);
 }
 
 function searchRecipes(search) {
-  const apiURL = `www.themealdb.com/api/json/v1/1/search.php?s=${search}`;
+  const apiURL = `https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`;
 
   console.log(apiURL);
+
+  fetch(apiURL).then(response => {
+    // Checking whether the response was successful.
+    if (!response.ok) {
+      throw new Error("Network response not ok.");
+    }
+    // Parsing the JSON response.
+    return response.json();
+  }).then(data => {
+    console.log(data);
+  }).catch(error => {
+    // Handling any errors that occurred during the fetch.
+    console.error("A problem occurred during the fetch operation:", error);
+  });
 }
 
 // The key press is only valid if there has been a search.
@@ -24,6 +40,4 @@ searchBar.addEventListener("change", () => {
   document.addEventListener("keypress", handleEnterKeyPress);
 
   console.log("Search bar value changed.");
-
-  searchRecipes(searchBar.value);
 });
