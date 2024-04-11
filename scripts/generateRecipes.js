@@ -77,8 +77,13 @@ function recipeEventListener(value, index, array) {
   value.addEventListener("click", goToRecipe(value, index, array));
 }
 
-function goToRecipe(event, value, index, array) {
-  console.log(event);
+function goToRecipe(value, index, array) {
   console.log(value);
   console.log(index);
+  console.log(array);
+
+  sessionStorage.setItem("selectedRecipe", JSON.stringify(value));
+
+  // Redirecting to the recipe page.
+  window.location.href = "recipe.html";
 }
