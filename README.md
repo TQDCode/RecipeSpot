@@ -2,6 +2,8 @@
 RecipeSpot is a recipe finder website.<br>
 Demo the website [here](https://tqdcode.github.io/RecipeSpot/).
 
+**Bug to fix, check whether the sentence length is greater than 1 before adding to instructions, since full stops have been added as bullet points.
+
 Below is the UI/UX design created using Figma.
 
 ## The Home / Explore Page
