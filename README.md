@@ -1,6 +1,6 @@
 # RecipeSpot
 RecipeSpot is a recipe finder website.<br>
-Demo the website [here](https://tqdcode.github.io/RecipeSpot/).
+Demo the website [here](https://thisbabecodes.github.io/RecipeSpot/).
 
 **Bug to fix, check whether the sentence length is greater than 1 before adding to instructions, since full stops have been added as bullet points.
 
